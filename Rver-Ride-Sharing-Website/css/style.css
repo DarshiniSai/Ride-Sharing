@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.section_title h2 {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.section_title p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+/* Nav Part Css Start */
+#header-navbar .navbar-brand img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Nav Part Css Start */
+
+
+/* Banner Part Css Start */
+#banner {
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner_overlay {
+    background: rgba(0, 0, 0, 0.603);
+}
+
+#banner .banner_content {
+    padding: 150px 0;
+}
+
+#banner h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#banner p {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+#banner a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10%;
+    margin-right: 15px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Banner Part Css End */
+/* Promo Part Css start */
+
+#promo {
+    padding: 30px 0;
+}
+
+
+#promo .promo_content {
+    text-align: center;
+    margin: 0 10px;
+}
+
+#promo .promo_content h3 {
+    margin: 10px 0;
+}
+
+#promo img {
+    height: 300px;
+    width: 300px;
+}
+
+
+/* Promo Part Css End */
+/* Offer Part Css Start*/
+
+#offer {
+    padding: 30px 0;
+    background-color: #F4F1EB;
+}
+
+#offer .offer_content {
+    text-align: center;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+#offer .offer_content p {
+    color: white;
+    padding: 20px 0px;
+    font-size: 20px;
+    background: cornflowerblue;
+}
+
+#offer .offer_content .img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#offer .offer_content .img .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#offer .offer_content .img .img_overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#offer .img:hover .img_overlay {
+    opacity: 1;
+}
+
+#offer a {
+    padding: 20px 40px;
+    border: 1px solid cornflowerblue;
+    border-radius: 20%;
+    background: cornflowerblue;
+    color: white;
+}
+
+/* Offer Part Css End */
+
+/* About part css start */
+
+#about {
+    padding: 30px 0;
+}
+
+#about .about_des{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#about .about_des h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#about .about_des p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#about img{
+    height: 450px;
+}
+
+#about .carousel-overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* About part css end */
+
+/* Features Part Css Start*/
+
+#features {
+    background-color: #F4F1EB;
+    padding: 30px 0;
+}
+
+#features img {
+    height: 300px;
+    width: 300px;
+}
+
+
+/* Features Part Css End*/
+
+/* Fleet Part Css Start */
+#fleet {
+    padding: 30px 0;
+}
+
+#fleet .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#fleet .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+#fleet .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half {
+    width: 49%;
+}
+
+.col_third {
+    width: 32%;
+}
+
+.col_fourth {
+    width: 23.5%;
+}
+
+.col_fifth {
+    width: 18.4%;
+}
+
+.col_sixth {
+    width: 15%;
+}
+
+.col_three_fourth {
+    width: 74.5%;
+}
+
+.col_twothird {
+    width: 66%;
+}
+
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth {
+    position: relative;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: violet;
+}
+
+.end {
+    margin-right: 0 !important;
+}
+
+/* Column Grids End */
+
+.counter_container {
+    width: 1300px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.counter {
+    background-color: whitesmoke;
+    padding: 40px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+
+
+
+
+/* Fleet Part Css End*/
+
+
+
+
+/* Footer part css start */
+
+#footer{
+    padding: 30px 0;
+    background-color: #2a2a2a;
+}
+
+#footer .footer_content h4{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Footer part css end */
+
+/* Estimator part start */
+
+#estimator .form_container{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#estimator form{
+    width: 400px;
+}
+
+#estimator form .btn{
+    width: 380px;
+    margin: 10px;
+}
+
+#estimator form label{
+    margin: 10px;
+}
+
+#estimator .result{
+    width: 636px;
+    height: 364px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estimator part end */
+
+/* Banner about part start */
+
+#about_banner {
+    background: url(../images/about-us-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.about_banner_overlay {
+    background: rgba(0, 0, 0, 0.603);
+}
+
+#about_banner .banner_content {
+    padding: 150px 0;
+}
+
+#about_banner h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#about_banner p {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+#about_banner a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10%;
+    margin-right: 15px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Banner about part end */
+
+/* Banner CEO part start */
+
+#banner_ceo {
+    background: url(../images/ceo_letter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner_overlay_ceo {
+    background: rgba(0, 0, 0, 0.603);
+}
+
+#banner_ceo .banner_content {
+    padding: 150px 0;
+}
+
+#banner_ceo h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#banner_ceo p {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+#banner_ceo a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 10%;
+    margin-right: 15px;
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Banner ceo part end */
