@@ -1,20 +1,10 @@
-<?php
-session_start();
-
-// Check if the user is logged in
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    // Redirect to the login page
-    header('Location: ../login.php');
-    exit;
-}
-?><?php 
+<?php 
   session_start();
   include_once "php/config.php";
   if(!isset($_SESSION['unique_id'])){
     header("location: login.php");
   }
 ?>
-
 <?php include_once "header.php"; ?>
 <body>
   <div class="wrapper">
