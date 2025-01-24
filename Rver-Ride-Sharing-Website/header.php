@@ -51,7 +51,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#about">About</a></li>
-                                <li><a class="dropdown-item" href="login.php">Ride</a></li>
+                                <li><a class="dropdown-item" href="Chat App/login.php">Ride</a></li>
                                 <li><a class="dropdown-item" href="#footer">Contact</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
